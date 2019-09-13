@@ -1,3 +1,14 @@
+# Personal Website
+
+This is the repo for my personal website. Just a place where I can experiment and show off some of the things I find interesting with React.js and JavaScript in general. 
+
+
+
+
+
+
+##Boiler plate create-react-app stuff
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
