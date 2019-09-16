@@ -7,7 +7,7 @@ This is the repo for my personal website. Just a place where I can experiment an
 
 
 
-##Boiler plate create-react-app stuff
+## Boiler plate create-react-app stuff
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
