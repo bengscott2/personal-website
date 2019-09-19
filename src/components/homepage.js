@@ -2,14 +2,22 @@ import React, { useState, useEffect } from 'react';
 import Welcome from './welcome';
 
 function Homepage(props) {
-  const [showWelcome, setShowWelcome] = useState(null)
+  const [showWelcome, setShowWelcome] = useState(true)
 
   useEffect(() => {
-    setShowWelcome(true)
-  }, [setShowWelcome])
+    handleFade()
+  })
+
+  function handleFade () {
+    setTimeout(() => {
+      setShowWelcome(false)
+    }, 1800)
+  }
 
   return (
-    showWelcome ? <Welcome setShow={setShowWelcome}/> : null
+    <div>
+      {showWelcome ? <Welcome /> : null}
+    </div>
   );
 }
 
