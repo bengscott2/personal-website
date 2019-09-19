@@ -9,7 +9,7 @@ function Homepage(props) {
   }, [setShowWelcome])
 
   return (
-    showWelcome ? <Welcome /> : showWelcome
+    showWelcome ? <Welcome setShow={setShowWelcome}/> : null
   );
 }
 
