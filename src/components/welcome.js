@@ -1,15 +1,17 @@
 import React from 'react';
 import './welcome.css';
 import styled, { keyframes } from 'styled-components';
-import { bounce } from 'react-animations';
-const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} `;
+import { fadeOut } from 'react-animations';
+const FadeOut = styled.div`animation: 2s ${keyframes`${fadeOut}`} `;
 
 function Welcome() {
 
   return (
-    <Bounce><div className='welcome-header'>
-      Welcome.
-    </div></Bounce>
+    <FadeOut>
+      <div className='welcome-header'>
+        Welcome.
+      </div>
+    </FadeOut>
   );
 }
 
