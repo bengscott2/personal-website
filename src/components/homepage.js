@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Welcome from './welcome';
 
-function Homepage() {
+function Homepage(props) {
+  const [showWelcome, setShowWelcome] = useState(null)
+
+  useEffect(() => {
+    setShowWelcome(true)
+  }, [setShowWelcome])
 
   return (
-    <Welcome />
+    showWelcome ? <Welcome /> : showWelcome
   );
 }
 
