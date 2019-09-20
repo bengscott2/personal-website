@@ -2,14 +2,11 @@ import React from 'react';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import './navbar.css'
 
 function Navbar() {
 
   return (
     <React.Fragment>
-      <Container>
         <Typography
           component="h2"
           variant="h5"
@@ -24,8 +21,16 @@ function Navbar() {
           <Button size='small'>
             About Me
           </Button>
+          <Button
+            size='small'
+            align='center'
+            >
+            Projects
+          </Button>
+          <Button size='small'>
+            Fun Things
+          </Button>
         </Toolbar>
-      </Container>
     </React.Fragment>
   )
 }

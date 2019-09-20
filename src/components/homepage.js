@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Welcome from './welcome';
 import Navbar from './navbar'
+import Container from '@material-ui/core/Container';
+import './MuiContainer.css'
 
 function Homepage(props) {
   const [showWelcome, setShowWelcome] = useState(true)
@@ -16,9 +18,11 @@ function Homepage(props) {
   }
 
   return (
-    <div>
-      {showWelcome ? <Welcome /> : <Navbar />}
-    </div>
+    <Container>
+      <div>
+        {showWelcome ? <Welcome /> : <Navbar />}
+      </div>
+    </Container>
   );
 }
 
