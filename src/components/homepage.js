@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Welcome from './welcome';
+import Navbar from './navbar'
 
 function Homepage(props) {
   const [showWelcome, setShowWelcome] = useState(true)
@@ -16,7 +17,7 @@ function Homepage(props) {
 
   return (
     <div>
-      {showWelcome ? <Welcome /> : null}
+      {showWelcome ? <Welcome /> : <Navbar />}
     </div>
   );
 }
