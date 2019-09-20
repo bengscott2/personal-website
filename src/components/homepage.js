@@ -14,7 +14,7 @@ function Homepage(props) {
   function handleFade () {
     setTimeout(() => {
       setShowWelcome(false)
-    }, 1800)
+    }, 1600)
   }
 
   return (
