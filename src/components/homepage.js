@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Welcome from './welcome';
+import Navbar from './navbar'
+import Container from '@material-ui/core/Container';
+import './MuiContainer.css'
 
 function Homepage(props) {
   const [showWelcome, setShowWelcome] = useState(true)
@@ -11,13 +14,15 @@ function Homepage(props) {
   function handleFade () {
     setTimeout(() => {
       setShowWelcome(false)
-    }, 1800)
+    }, 1600)
   }
 
   return (
-    <div>
-      {showWelcome ? <Welcome /> : null}
-    </div>
+    <Container>
+      <div>
+        {showWelcome ? <Welcome /> : <Navbar />}
+      </div>
+    </Container>
   );
 }
 
