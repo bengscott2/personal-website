@@ -7,34 +7,15 @@ import './MuiToolbar.css'
 function Navbar() {
 
   return (
-    <React.Fragment>
-        <Toolbar>
-          <Typography
-            component="h2"
-            variant="h5"
-            color="inherit"
-            align="center"
-            noWrap
-            className='name-bar'
-          >
-            Benjamin Scott
-          </Typography>
-        </Toolbar>
-        <Toolbar>
-          <Button size='small'>
-            About Me
-          </Button>
-          <Button
-            size='small'
-            align='center'
-          >
-            Projects
-          </Button>
-          <Button size='small'>
-            Fun Things
-          </Button>
-        </Toolbar>
-    </React.Fragment>
+    <div>
+      <h1 className='name-bar'>BENJAMIN SCOTT</h1>
+      <ul>
+        <li>Home</li>
+        <li>Projects</li>
+        <li>CV</li>
+        <li  style={{float:'right'}}>Contact</li>
+      </ul>
+    </div>
   )
 }
 
