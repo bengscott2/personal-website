@@ -1,9 +1,8 @@
 .nav-bar{
   font-family: 'Times', sans-serif;
-  border-top: 2px solid #DCDCDC;
-  border-bottom: 2px solid #DCDCDC;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
-
 li{
   display:inline-block;
   padding-right: 10px;
@@ -13,6 +12,7 @@ li{
 }
 
 .name-bar{
-  font-family: 'Times', sans-serif;
+  font-family: 'Robot', sans-serif;
+  font-weight: lighter;
   padding-left: 30px;
 }
