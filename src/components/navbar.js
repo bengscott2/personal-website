@@ -1,40 +1,20 @@
 import React from 'react';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import './MuiToolbar.css'
+import './navbar.css'
 
 function Navbar() {
 
   return (
-    <React.Fragment>
-        <Toolbar>
-          <Typography
-            component="h2"
-            variant="h5"
-            color="inherit"
-            align="center"
-            noWrap
-            className='name-bar'
-          >
-            Benjamin Scott
-          </Typography>
-        </Toolbar>
-        <Toolbar>
-          <Button size='small'>
-            About Me
-          </Button>
-          <Button
-            size='small'
-            align='center'
-          >
-            Projects
-          </Button>
-          <Button size='small'>
-            Fun Things
-          </Button>
-        </Toolbar>
-    </React.Fragment>
+    <div>
+      <h1 className='name-bar'>Benjamin Scott</h1>
+      <div>
+        <ul className='nav-bar'>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>CV</li>
+          <li  style={{float:'right'}}>Contact</li>
+        </ul>
+      </div>
+    </div>
   )
 }
 
